@@ -10,7 +10,7 @@ namespace YW2DSG
     {
         private int mass;
         private Vector2 size;
-        private bool isPlayer;
+        private bool isEntity;
 
         private bool initialized = false;
 
@@ -20,7 +20,7 @@ namespace YW2DSG
         {
             mass = 1; //Default: 1"kg"
             size = new Vector2(8, 8); //Default: 1 block
-            isPlayer = false; //Default: false;
+            isEntity = false; //Default: false;
         }
 
         public int Mass
@@ -35,10 +35,10 @@ namespace YW2DSG
             set { size = value; }
         }
 
-        public bool IsPlayer
+        public bool IsEntity
         {
-            get { return isPlayer; }
-            set { isPlayer = value; }
+            get { return isEntity; }
+            set { isEntity = value; }
         }
 
         public bool InitializeGravity()

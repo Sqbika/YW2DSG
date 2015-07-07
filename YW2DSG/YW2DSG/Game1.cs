@@ -28,6 +28,7 @@ namespace YW2DSG
         {
             keyboardHandler = new Handles.Keyboardhandler();
             mouseHandler = new Handles.Mousehandler();
+
             base.Initialize();
         }
 

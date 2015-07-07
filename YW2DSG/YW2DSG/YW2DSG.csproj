@@ -76,10 +76,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DefaultKeybinds.cs" />
-    <Compile Include="Elements\Player.cs" />
+    <Compile Include="Entity\GenericEntity.cs" />
     <Compile Include="Gravity.cs" />
     <Compile Include="Handles\Keyboardhandler.cs" />
     <Compile Include="Handles\Mousehandler.cs" />
+    <Compile Include="Items\GenericItem.cs" />
     <Compile Include="Map\GenericTile.cs" />
     <Compile Include="Menu\DrawMenu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

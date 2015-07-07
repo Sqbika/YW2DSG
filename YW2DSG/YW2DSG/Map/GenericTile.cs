@@ -21,6 +21,7 @@ namespace YW2DSG.Map
 
         public GenericTile()
         {
+            IsEntity = false;
             position = new Vector2(0, 0);
             collisionBox = new Rectangle(0, 0, 8, 8);
             name = null;
