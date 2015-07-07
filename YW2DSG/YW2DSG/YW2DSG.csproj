@@ -16,8 +16,9 @@
     <XnaProfile>Reach</XnaProfile>
     <XnaCrossPlatformGroupID>207b4f55-2b8d-43fb-8a2e-a0fbdfb6200c</XnaCrossPlatformGroupID>
     <XnaOutputType>Game</XnaOutputType>
-    <ApplicationIcon>Game.ico</ApplicationIcon>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
     <Thumbnail>GameThumbnail.png</Thumbnail>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -30,7 +31,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -102,10 +102,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Game.ico" />
     <Content Include="GameThumbnail.png">
       <XnaPlatformSpecific>true</XnaPlatformSpecific>
     </Content>
+    <Content Include="Game.ico" />
+    <Content Include="Icon.ico" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\YW2DSGContent\YW2DSGContent.contentproj">
