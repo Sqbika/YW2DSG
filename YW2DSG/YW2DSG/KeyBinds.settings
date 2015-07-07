@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="YW2DSG" GeneratedClassName="KeyBinds">
+  <Profiles />
+  <Settings>
+    <Setting Name="Exit" Type="Microsoft.Xna.Framework.Input.Keys" Scope="User">
+      <Value Profile="(Default)">Escape</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

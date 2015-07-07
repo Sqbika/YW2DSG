@@ -16,6 +16,7 @@ namespace YW2DSG
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Handles.Keyboard keyboardHandler;
+        Handles.Mousehandler mouseHandler;
 
         public Game1()
         {
@@ -26,6 +27,7 @@ namespace YW2DSG
         protected override void Initialize()
         {
             keyboardHandler = new Handles.Keyboard();
+            mouseHandler = new Handles.Mousehandler();
             base.Initialize();
         }
 
