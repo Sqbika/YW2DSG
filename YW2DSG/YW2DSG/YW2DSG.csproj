@@ -80,7 +80,16 @@
     <Compile Include="Gravity.cs" />
     <Compile Include="Handles\Keyboardhandler.cs" />
     <Compile Include="Handles\Mousehandler.cs" />
+    <Compile Include="Items\Armor\Chest\GenericChestArmor.cs" />
+    <Compile Include="Items\Armor\GenericArmor.cs" />
+    <Compile Include="Items\Armor\Hands\GenericHandsArmor.cs" />
+    <Compile Include="Items\Armor\Head\GenericHeadArmor.cs" />
+    <Compile Include="Items\Armor\Legs\GenericLegArmor.cs" />
     <Compile Include="Items\GenericItem.cs" />
+    <Compile Include="Items\Tools\Axe\GenericAxe.cs" />
+    <Compile Include="Items\Tools\GenericTool.cs" />
+    <Compile Include="Items\Tools\Pickaxe\GenericPickaxe.cs" />
+    <Compile Include="Items\Tools\Shovel\GenericShovel.cs" />
     <Compile Include="Map\GenericTile.cs" />
     <Compile Include="Menu\DrawMenu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

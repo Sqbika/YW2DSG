@@ -16,7 +16,7 @@ namespace YW2DSG.Map
         private int tileID;
         //TODO: Add ItemDroppedOnRemove variable
         private int hardness;
-        //TODO: Add requiredTool variable
+        private int requiredTool;
         private int requiredToolLevel;
 
         public GenericTile()
@@ -29,7 +29,7 @@ namespace YW2DSG.Map
             tileID = 0;
             //itemDroppedOnRemove = null;
             hardness = 0;
-            //requiredTool = nothing;
+            requiredTool = 0;
             requiredToolLevel = 0;
         }
 
@@ -65,7 +65,7 @@ namespace YW2DSG.Map
         }
 
         /*
-         public *GENERICITEM* ItemDroppedOnRemove
+         public *GENERICITEMENTITY* ItemDroppedOnRemove
          {
             get { return itemDroppedOnRemove; }
             set { itemDroppedOnRemove = value; }
@@ -78,13 +78,11 @@ namespace YW2DSG.Map
             set { hardness = value; }
         }
 
-        /*
-         public *GENERICTOOL* RequiredTool
+         public int RequiredTool
          {
             get { return requiredTool; }
             set { requiredTool = value; }
          }
-         */
 
         public int RequiredToolLevel
         {

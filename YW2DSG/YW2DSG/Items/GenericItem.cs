@@ -12,6 +12,7 @@ namespace YW2DSG.Items
         private string itemName;
         private Texture2D itemTexture;
         private string itemDesc;
+        private Map.GenericTile tileName;
 
 
         public GenericItem()
@@ -20,6 +21,7 @@ namespace YW2DSG.Items
             itemName = null;
             itemTexture = null;
             itemDesc = null;
+            tileName = null;
         }
 
         public int MaxStack
@@ -44,6 +46,12 @@ namespace YW2DSG.Items
         {
             get { return itemDesc; }
             set { itemDesc = value; }
+        }
+
+        public Map.GenericTile TileName
+        {
+            get { return tileName; }
+            set { tileName = value; }
         }
     }
 }
