@@ -5,8 +5,13 @@ using System.Text;
 
 namespace YW2DSG.Elements
 {
-    class Player
+    public class Player : Gravity
     {
+        public Player()
+        {
+            Mass = 1;
+            Size = new Microsoft.Xna.Framework.Vector2(8, 16);
+        }
 
     }
 }

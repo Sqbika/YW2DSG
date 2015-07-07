@@ -6,17 +6,26 @@ using Microsoft.Xna.Framework.Input;
 
 namespace YW2DSG.Handles
 {
-    class Keyboard
+    class Keyboardhandler
     {
         KeyboardState kb;
+        string keys;
         
         public bool InitializeKeyBoard()
         {
+            kb = new KeyboardState();
             return false;
         }
 
-        public Keyboard()
+        public Keyboardhandler()
         {
+            
         }
+
+        public void UpdateKeyBoard()
+        {
+            kb = Keyboard.GetState();
+         }
+
     }
 }

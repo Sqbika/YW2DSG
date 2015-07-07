@@ -15,7 +15,7 @@ namespace YW2DSG
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        Handles.Keyboard keyboardHandler;
+        Handles.Keyboardhandler keyboardHandler;
         Handles.Mousehandler mouseHandler;
 
         public Game1()
@@ -26,7 +26,7 @@ namespace YW2DSG
 
         protected override void Initialize()
         {
-            keyboardHandler = new Handles.Keyboard();
+            keyboardHandler = new Handles.Keyboardhandler();
             mouseHandler = new Handles.Mousehandler();
             base.Initialize();
         }
@@ -45,6 +45,7 @@ namespace YW2DSG
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
+            keyboardHandler.UpdateKeyBoard();
 
             base.Update(gameTime);
         }
