@@ -15,6 +15,7 @@ namespace YW2DSG
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        Handles.Keyboard keyboardHandler;
 
         public Game1()
         {
@@ -24,7 +25,7 @@ namespace YW2DSG
 
         protected override void Initialize()
         {
-
+            keyboardHandler = new Handles.Keyboard();
             base.Initialize();
         }
 
