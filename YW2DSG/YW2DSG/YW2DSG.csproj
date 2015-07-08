@@ -90,7 +90,8 @@
     <Compile Include="Items\Tools\GenericTool.cs" />
     <Compile Include="Items\Tools\Pickaxe\GenericPickaxe.cs" />
     <Compile Include="Items\Tools\Shovel\GenericShovel.cs" />
-    <Compile Include="Map\GenericTile.cs" />
+    <Compile Include="Textures.cs" />
+    <Compile Include="Tiles\GenericTile.cs" />
     <Compile Include="Menu\DrawMenu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
@@ -100,6 +101,8 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>KeyBinds.settings</DependentUpon>
     </Compile>
+    <Compile Include="Tiles\TileDirt.cs" />
+    <Compile Include="Tiles\TileMissing.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="GameThumbnail.png">
@@ -137,6 +140,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Map\" />
     <Folder Include="Menu\Play\" />
     <Folder Include="Menu\Settings\" />
   </ItemGroup>

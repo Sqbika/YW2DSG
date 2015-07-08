@@ -8,21 +8,19 @@ namespace YW2DSG
 {
     public class Gravity
     {
-        private int mass;
-        private Vector2 size;
-        private bool isEntity;
-
+        private int mass = 1;
+        private Vector2 size = new Vector2(8, 8);
+        private bool isEntity = false;
+        private bool shouldGravity = false;
         private bool initialized = false;
+        private Textures textureManager;
 
-        private List<object> gravitedObjects;
-
-        public Gravity()
+        public void InitializeGravityHub(Textures textures)
         {
-            mass = 1; //Default: 1"kg"
-            size = new Vector2(8, 8); //Default: 1 block
-            isEntity = false; //Default: false;
+            textureManager = textures;
         }
 
+        private List<object> gravitedObjects;
         public int Mass
         {
             get { return mass; }
@@ -39,6 +37,12 @@ namespace YW2DSG
         {
             get { return isEntity; }
             set { isEntity = value; }
+        }
+
+        public bool ShouldGravity
+        {
+            get { return shouldGravity; }
+            set { shouldGravity = value; }
         }
 
         public bool InitializeGravity()
@@ -60,6 +64,11 @@ namespace YW2DSG
             {
                 gravitedObjects.Add(Thing);
             }
+        }
+
+        public Textures TextureManager
+        {
+            get { return textureManager; }
         }
     }
 }

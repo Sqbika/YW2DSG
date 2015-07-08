@@ -17,6 +17,7 @@ namespace YW2DSG
         SpriteBatch spriteBatch;
         Handles.Keyboardhandler keyboardHandler;
         Handles.Mousehandler mouseHandler;
+        Textures textures;
 
         public Game1()
         {
@@ -28,14 +29,15 @@ namespace YW2DSG
         {
             keyboardHandler = new Handles.Keyboardhandler();
             mouseHandler = new Handles.Mousehandler();
-
+            textures = new Textures();
             base.Initialize();
         }
 
         protected override void LoadContent()
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
+            if (!textures.InitializeTextures(Content))
+                throw new System.IO.FileNotFoundException("Texture file not found!");
         }
 
         protected override void UnloadContent()

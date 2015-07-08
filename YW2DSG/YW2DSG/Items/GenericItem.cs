@@ -12,7 +12,7 @@ namespace YW2DSG.Items
         private string itemName;
         private Texture2D itemTexture;
         private string itemDesc;
-        private Map.GenericTile tileName;
+        private Tiles.GenericTile tileName;
 
 
         public GenericItem()
@@ -48,7 +48,7 @@ namespace YW2DSG.Items
             set { itemDesc = value; }
         }
 
-        public Map.GenericTile TileName
+        public Tiles.GenericTile TileName
         {
             get { return tileName; }
             set { tileName = value; }

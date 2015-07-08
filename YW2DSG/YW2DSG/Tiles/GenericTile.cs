@@ -5,33 +5,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace YW2DSG.Map
+namespace YW2DSG.Tiles
 {
     public class GenericTile : Gravity
     {
-        private Vector2 position; //Calculated from Top-Left of the Tile
-        private Rectangle collisionBox;
-        private string name;
-        private Texture2D textureName;
-        private int tileID;
+        private Vector2 position = new Vector2(0, 0); //Calculated from Top-Left of the Tile
+        private Rectangle collisionBox = new Rectangle(0, 0, 8, 8);
+        private string name = null;
+        private Texture2D textureName = null;
+        private int tileID = 0;
         //TODO: Add ItemDroppedOnRemove variable
-        private int hardness;
-        private int requiredTool;
-        private int requiredToolLevel;
-
-        public GenericTile()
-        {
-            IsEntity = false;
-            position = new Vector2(0, 0);
-            collisionBox = new Rectangle(0, 0, 8, 8);
-            name = null;
-            textureName = null;
-            tileID = 0;
-            //itemDroppedOnRemove = null;
-            hardness = 0;
-            requiredTool = 0;
-            requiredToolLevel = 0;
-        }
+        private int hardness = 0;
+        private int requiredTool = 0;
+        private int requiredToolLevel = 0;
 
         #region Publicity
         public Vector2 Position

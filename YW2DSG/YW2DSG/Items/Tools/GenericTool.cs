@@ -7,7 +7,7 @@ namespace YW2DSG.Items.Tools
 {
     class GenericTool : GenericItem
     {
-        private int toolType; // 1: Pickaxe / 2: Shovel /3: Axe
+        private int toolType; // 1: Pickaxe / 2: Shovel /3: Axe / 0: Nothing
         private int strenght;
         private int speed;
         private int tileReach;
