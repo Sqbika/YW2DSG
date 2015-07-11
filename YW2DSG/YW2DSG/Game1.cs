@@ -36,8 +36,9 @@ namespace YW2DSG
         protected override void LoadContent()
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            if (!textures.InitializeTextures(Content))
-                throw new System.IO.FileNotFoundException("Texture file not found!");
+            textures.InitializeTextures(Content);
+            mouseHandler.InitialzeMouseHandler();
+            keyboardHandler.InitializeKeyBoard();
         }
 
         protected override void UnloadContent()
@@ -49,7 +50,7 @@ namespace YW2DSG
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
             keyboardHandler.UpdateKeyBoard();
-
+            mouseHandler.UpdateMS();
             base.Update(gameTime);
         }
 

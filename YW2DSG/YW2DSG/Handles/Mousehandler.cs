@@ -12,10 +12,9 @@ namespace YW2DSG.Handles
         MouseState ms;
         Vector2 MousePosition;
 
-        public bool InitialzeMouseHandler()
+        public void InitialzeMouseHandler()
         {
-            MousePosition = new Vector2(MousePosition.X, MousePosition.Y);
-            return false;
+            MousePosition = new Vector2(ms.X, ms.Y);
         }
 
         public Vector2 GetMousePos()
@@ -30,7 +29,7 @@ namespace YW2DSG.Handles
 
         public void UpdateMS()
         {
-            MousePosition = new Vector2(MousePosition.X, MousePosition.Y);
+            MousePosition = new Vector2(ms.X, ms.Y);
         }
     }
 }

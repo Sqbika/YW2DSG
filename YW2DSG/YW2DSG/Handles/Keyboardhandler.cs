@@ -11,15 +11,9 @@ namespace YW2DSG.Handles
         KeyboardState kb;
         string keys;
         
-        public bool InitializeKeyBoard()
+        public void InitializeKeyBoard()
         {
             kb = new KeyboardState();
-            return false;
-        }
-
-        public Keyboardhandler()
-        {
-            
         }
 
         public void UpdateKeyBoard()
