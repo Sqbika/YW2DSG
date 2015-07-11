@@ -1,4 +1,4 @@
-﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
@@ -14,7 +14,7 @@ namespace YW2DSG.Tiles
         private string name = null;
         private Texture2D textureName = null;
         private int tileID = 0;
-        //TODO: Add ItemDroppedOnRemove variable
+        private Items.GenericItem itemDroppedOnRemove = null;
         private int hardness = 0;
         private int requiredTool = 0;
         private int requiredToolLevel = 0;
@@ -50,13 +50,13 @@ namespace YW2DSG.Tiles
             set { tileID = value; }
         }
 
-        /*
-         public *GENERICITEMENTITY* ItemDroppedOnRemove
+        
+         public Items.GenericItem ItemDroppedOnRemove
          {
             get { return itemDroppedOnRemove; }
             set { itemDroppedOnRemove = value; }
          }
-         */
+         
 
         public int Hardness
         {

@@ -1,4 +1,4 @@
-﻿using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +13,7 @@ namespace YW2DSG.Items
         private Texture2D itemTexture;
         private string itemDesc;
         private Tiles.GenericTile tileName;
+	  private int itemID;
 
 
         public GenericItem()
@@ -22,6 +23,7 @@ namespace YW2DSG.Items
             itemTexture = null;
             itemDesc = null;
             tileName = null;
+		itemID = 0;
         }
 
         public int MaxStack
@@ -53,5 +55,11 @@ namespace YW2DSG.Items
             get { return tileName; }
             set { tileName = value; }
         }
+
+	public int ItemID
+	{
+		get { return itemID; }
+		set { itemID = value; }
+	}
     }
 }

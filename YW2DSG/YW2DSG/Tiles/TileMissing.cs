@@ -1,4 +1,4 @@
-﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +15,7 @@ namespace YW2DSG.Tiles
             Name = "Missing";
             TileID = 0;
             TextureName = TextureManager.GetTextureFromID(TileID);
+		ItemDroppedOnRemove= Items.ItemMissing();
             Hardness = 0;
             RequiredTool = 0;
             RequiredToolLevel = 0;
