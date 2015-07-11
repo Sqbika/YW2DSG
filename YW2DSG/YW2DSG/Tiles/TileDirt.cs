@@ -15,7 +15,7 @@ namespace YW2DSG.Tiles
             Name = "Dirt";
             TileID = 1;
             TextureName = TextureManager.GetTextureFromID(TileID);
-		ItemDroppedOnRemove = Tiles.TileDirt();
+		ItemDroppedOnRemove = Items.ItemDirt();
             Hardness = 2;
             RequiredTool = 2;
             RequiredToolLevel = 1;
