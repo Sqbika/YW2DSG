@@ -1,4 +1,4 @@
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +15,7 @@ namespace YW2DSG.Tiles
             Name = "Dirt";
             TileID = 1;
             TextureName = TextureManager.GetTextureFromID(TileID);
-		ItemDroppedOnRemove = Items.ItemDirt();
+		ItemDroppedOnRemove = new Items.ItemDirt();
             Hardness = 2;
             RequiredTool = 2;
             RequiredToolLevel = 1;

@@ -21,5 +21,7 @@ namespace YW2DSG.Handles
             kb = Keyboard.GetState();
          }
 
+        private void ReactToKeybinds()
+
     }
 }

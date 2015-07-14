@@ -86,6 +86,9 @@
     <Compile Include="Items\Armor\Head\GenericHeadArmor.cs" />
     <Compile Include="Items\Armor\Legs\GenericLegArmor.cs" />
     <Compile Include="Items\GenericItem.cs" />
+    <Compile Include="Items\ItemDirt.cs" />
+    <Compile Include="Items\ItemMissing.cs" />
+    <Compile Include="Items\ItemRock.cs" />
     <Compile Include="Items\Tools\Axe\GenericAxe.cs" />
     <Compile Include="Items\Tools\GenericTool.cs" />
     <Compile Include="Items\Tools\Pickaxe\GenericPickaxe.cs" />
@@ -103,6 +106,7 @@
     </Compile>
     <Compile Include="Tiles\TileDirt.cs" />
     <Compile Include="Tiles\TileMissing.cs" />
+    <Compile Include="Tiles\TileRock.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="GameThumbnail.png">

@@ -1,4 +1,4 @@
-using Microsoft.Xna.Framework.Graphics;
+﻿using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +8,7 @@ namespace YW2DSG.Items
 {
     class GenericItem
     {
+        private Textures textureManager;
         private int maxStack;
         private string itemName;
         private Texture2D itemTexture;
@@ -25,6 +26,9 @@ namespace YW2DSG.Items
             tileName = null;
 		itemID = 0;
         }
+
+        public void InitializeItems(Textures texture)
+        { textureManager = texture; }
 
         public int MaxStack
         {
@@ -54,6 +58,11 @@ namespace YW2DSG.Items
         {
             get { return tileName; }
             set { tileName = value; }
+        }
+
+        public Textures TextureManager
+        {
+            get { return textureManager; }
         }
 
 	public int ItemID
